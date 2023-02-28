@@ -81,6 +81,13 @@
   <br><br><button id="submitMod">Submit</button>
 </div><br>
 <div id="theme_picker">
+<div id="cheatmode" style="display:block">
+  <font size="5" color = BSColour ><b>   Game Difficulty: </b></font><input onchange="difficultyChanger()" type="range" style="width:400px" min="0" max="10000" value="1100" class="slider" id="difficultySlider" /><font size="2" color = BScolour id="difficultyMod">Current Difficulty Multiplier: 0</font>
+  <br><br>
+  <button onclick="benefitChecker()"><font size="5"><b>Get Benefit Check</b></font></button> <br><br>
+  <font size="5"color = "white"><b>Skip to question: </b></font><input id="skiptoquestion"><button onclick="a=function(){campaignTrail_temp.question_number = Number(document.getElementById('skiptoquestion').value);}()">Skip</button>
+</div>
+<div id='dialogue' title='Benefit Check'></div>
 <span class="campaign_trail_start_emphasis"><button id="game_start" onclick=creatorChange()><strong>Button</strong></button></span>    
 <script type="text/javascript">
   const yearField = document.getElementById("year")
@@ -197,13 +204,6 @@ function benefitCheck(objectid){
   }
 </script>
 <br>
-<div id="cheatmode" style="display:block">
-  <font size="5" color = BSColour ><b>   Game Difficulty: </b></font><input onchange="difficultyChanger()" type="range" style="width:400px" min="0" max="10000" value="1100" class="slider" id="difficultySlider" /><font size="2" color = BScolour id="difficultyMod">Current Difficulty Multiplier: 0</font>
-  <br><br>
-  <button onclick="benefitChecker()"><font size="5"><b>Get Benefit Check</b></font></button> <br><br>
-  <font size="5"color = "white"><b>Skip to question: </b></font><input id="skiptoquestion"><button onclick="a=function(){campaignTrail_temp.question_number = Number(document.getElementById('skiptoquestion').value);}()">Skip</button>
-</div>
-<div id='dialogue' title='Benefit Check'></div>
 </body>
 <!-- <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <script src="../static/js/lib/raphael.js"></script>

@@ -57,9 +57,6 @@
   <button onclick="document.getElementById('campaigntrailmusic').play()">Play Soundtrack</button>     <button onClick="document.getElementById('campaigntrailmusic').pause()">Pause</button>
   <audio id="campaigntrailmusic" loop="true" style="display:none" src="" autoplay="false"></audio>
 </div>
-<button id="enableCheatMode" onclick="document.getElementById('cheatmode').style.display=''">
-  Enable Cheat Mode
-</button><br><br>
 <button id="modLoadReveal" onclick="if(document.getElementById('modloaddiv').style.display != 'none'){document.getElementById('modloaddiv').style.display = 'none'}else{document.getElementById('modloaddiv').style.display = 'block'}">
   Mod Loader
 </button><br><br>
@@ -200,7 +197,7 @@ function benefitCheck(objectid){
   }
 </script>
 <br>
-<div id="cheatmode" style="display:none">
+<div id="cheatmode" style="display:block">
   <font size="5" color = BSColour ><b>   Game Difficulty: </b></font><input onchange="difficultyChanger()" type="range" style="width:400px" min="0" max="10000" value="1100" class="slider" id="difficultySlider" /><font size="2" color = BScolour id="difficultyMod">Current Difficulty Multiplier: 0</font>
   <br><br>
   <button onclick="benefitChecker()"><font size="5"><b>Get Benefit Check</b></font></button> <br><br>

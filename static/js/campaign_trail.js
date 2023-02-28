@@ -1054,9 +1054,6 @@ function divideElectoralVotesProp(e, t) {
                         document.getElementById("music_player").style.display = ""
                         document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
                     }
-                    if (campaignTrail_temp.iamapoopybuttfaceandhavenolife) {
-                        document.getElementById('cheatmode').style.display = ""
-                    }
                     if (modded == false) {
                         aaa = election_HTML(t, i, a)
                         aaa = "../static/questionset/" + aaa

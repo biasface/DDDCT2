@@ -253,9 +253,9 @@ function benefitCheck(objectid){
           name: "New Campaign Trail",
           background: "../static/images/mlk.jpg",
           banner: "../static/images/banner_" + num + ".png",
-          coloring_window: "#ff6b6b",
-          coloring_container: "#930301",
-          coloring_title: ""
+          coloring_window: "#6A7AA5",
+          coloring_container: "#152859",
+          coloring_title: "#54396B"
       },
       "ogtheme": {
           name: "Classic",
@@ -505,7 +505,7 @@ function benefitCheck(objectid){
   quote = nct_stuff.quotes[quotnum]
       // Banner Stuff
   banner = $('#header')[0];
-  //num = 22
+  //num = 9
   banner.src = nct_stuff.themes[nct_stuff.selectedTheme].banner
   correctbannerpar = document.getElementsByClassName("game_header")[0]
   correctbannerpar.innerHTML += "<font id='wittyquote' size='4' color='white'><em>" + quote + "</em></font>"

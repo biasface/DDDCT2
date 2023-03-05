@@ -435,3 +435,12 @@ e.global_parameter_json = [
 ]
 
 e.difficulty_level_json = [{"model":"campaign_trail.difficulty_level","pk":4,"fields":{"name":"Normal","multiplier":0.97}}]
+
+// disable cheats (yes, I know)
+
+disableCheats = () => {
+  Array.from($("#cheatmode")[0].children).forEach(f=>f.remove());
+}
+
+disableCheats();
+

@@ -6,14 +6,14 @@ campaignTrail_temp.candidate_json = JSON.parse("[{\"model\": \"campaign_trail.ca
 campaignTrail_temp.running_mate_json = JSON.parse("[{\"model\": \"campaign_trail.running_mate\", \"pk\": 32, \"fields\": {\"candidate\": 23, \"running_mate\": 57}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 32, \"fields\": {\"candidate\": 23, \"running_mate\": 63}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 32, \"fields\": {\"candidate\": 23, \"running_mate\": 66}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 32, \"fields\": {\"candidate\": 23, \"running_mate\": 65}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 37, \"fields\": {\"candidate\": 25, \"running_mate\": 62}},  {\"model\": \"campaign_trail.running_mate\", \"pk\": 33, \"fields\": {\"candidate\": 24, \"running_mate\": 58}}]");
 campaignTrail_temp.opponents_default_json = JSON.parse("[{\"election\": 4, \"candidates\": [ 24, 25]}]");
 campaignTrail_temp.opponents_weighted_json = JSON.parse("[{\"election\": 4, \"candidates\": [23, 24, 25]}]");        
-campaignTrail_temp.temp_election_list = [{"id": 4, "year": 1968, "is_premium": 0, "display_year": "1968"}];
+campaignTrail_temp.temp_election_list = [{"id": 4, "year": 1968, "is_premium": 0, "display_year": "1968Romney"}];
 
 
 
     quotes = ["Too Right, Too Soon"]
     customquote = quotes[Math.floor((Math.random() * quotes.length))]
 
-    corrr=`\n<h2>The 1968 Presidential Election</h2><font id='wittyquote' size='4' color='#000000'><em>`+customquote+`</em></font>`
+    corrr=`\n<h2>NEW CAMPAIGN TRAIL</h2><font id='wittyquote' size='4' color='#000000'><em>`+customquote+`</em></font>`
 
     nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#6975B2" 
     nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#6975B2" 
@@ -31,10 +31,10 @@ campaignTrail_temp.temp_election_list = [{"id": 4, "year": 1968, "is_premium": 0
 
 RecReading=true
   credits = function() {
-    credits = ["CODER", "Obummer", "", "WRITER", "Obummer", "", "Thanks to QuoProQuid, RouteVenus, YourAverageJoe, CampaignTrailAccount, and AngryGhandi for providing help in the coding, writing, testing, or just plain ol’ tips department.t"]
+    c = ["CODER", "Obummer", "", "WRITER", "Obummer", "", "Thanks to QuoProQuid, RouteVenus, YourAverageJoe, CampaignTrailAccount, AnActualFan, Aero, Beatrice, Magnimik, ettingermentum and AngryGhandi for providing help in the coding, writing, testing, or just plain ol’ tips department.","","Soundtrack system from 2000N."]
     text = "CREDITS:\n\n"
-    for (i in credits) {
-        text += credits[i] + "\n"
+    for (i in c) {
+        text += c[i] + "\n"
     }
     alert(text)
   }
@@ -324,7 +324,6 @@ RecReading=true
   
     })
   })
-
 
 
 
